@@ -1,26 +1,47 @@
+// import { Routes } from 'react-router-dom';
+import './App.css'
+import About from './components/About';
+import Bot from './components/Bot';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
+import Hireme from './components/Hireme';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
+// import footer from './components/Footer';
+import Footer from './components/Footer';
+// import { useState } from 'react';
+import { ThemeProvider } from 'next-themes';
 
-import { useState } from 'react';
-import './App.css';
-import Home from './Home';
-// import axios from 'axios';
-// import Na from './Names.json'
+
 
 function App() {
+
  
-  
-
   return (
-    <div className="App">
+      <  >
+      <ThemeProvider>
 
-      <Home names={'ayman '} age={22} mother={'sahra '} father={"mohamed"}/>
-      {/* <Home mother={'sahra '} father={"mohamed"}/> */}
+      <Navbar />
+ <Bot/>
+   <Hero/>
+   <About/>
+   <Skills/>
+   <Hireme/>
+   <Projects/>
+   <Contact/>
+   <Footer/>
+      </ThemeProvider>
 
 
-      </div>
+  </>
 
-   
-      
-  );
+  )
+
+
+ 
+
+
 }
 
 export default App;
